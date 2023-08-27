@@ -9,11 +9,11 @@ import org.springframework.beans.web.bind.annotation.PutMapping;
 import org.springframework.beans.web.bind.annotation.RequestBody;
 import org.springframework.beans.web.bind.annotation.restController;
 import com.examly.springapp.model.Task;
-import com.examly.springapp.service.TaskService;
+import com.examly.springapp.service.TasksService;
 @RestController
 public class TaskController{
     @Autowired
-    TaskService TaskService;
+    TasksService taskService;
     @GetMapping("/alltasks")
     public list<Task> getAllTasks(){
         return tasksService.getAllTasks();

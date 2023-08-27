@@ -7,7 +7,7 @@ import com.examly.springapp.repository.TaskRepository;
 @Service
 public class TasksService{
     @Autowired
-    TasksRepository tasksRepository;
+    TaskRepository tasksRepository;
     public List<Task> getAllTasks(){
         return (List<Task>) tasksRepository.findAll();
     }

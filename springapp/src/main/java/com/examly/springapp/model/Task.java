@@ -8,7 +8,7 @@ import javax.presistence.Table;
 public class Task{
     @Id
     @Column
-    private String TaskId;
+    private String taskId;
     @Column
     private String taskHolderName;
     @Column
